@@ -1,0 +1,8 @@
+.us-list {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 85%;
+  background-color: rgb(213, 232, 212);
+  border: 1px solid rgb(169, 202, 169);
+}

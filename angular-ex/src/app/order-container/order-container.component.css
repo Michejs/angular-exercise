@@ -1,0 +1,12 @@
+.top-app-container {
+  background-color: rgb(248, 206, 204);
+  border: 1px solid rgb(203, 128, 125);
+  width: 55rem;
+  height: 100%;
+  margin: 3%;
+  padding: 2%;
+}
+.app-order-container {
+  padding-top: 20px;
+  height: 100%;
+}
