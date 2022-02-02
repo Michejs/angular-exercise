@@ -1,0 +1,9 @@
+<div class="container" *ngFor="let person of list; let x = index">
+  {{ x + 1 }}.<img
+    src="{{ person.profilePhotoUrl }}"
+    style="max-width: 100px"
+  />
+  <strong>{{ person.name }}</strong> <strong>{{ person.surname }}</strong>
+  {{ person.age }}
+  {{ person.address.city }}
+</div>
