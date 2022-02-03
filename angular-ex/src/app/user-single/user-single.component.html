@@ -1,9 +1,8 @@
-<div class="container" *ngFor="let person of singleElement; let x = index">
-  {{ x + 1 }}.<img
-    src="{{ person.profilePhotoUrl }}"
-    style="max-width: 100px"
-  />
-  <strong>{{ person.name }}</strong> <strong>{{ person.surname }}</strong>
-  {{ person.age }}
-  {{ person.address.city }}
+<div class="container" *ngFor="let user of singleElement; let x = index">
+  {{ x + 1 }}.<img src="{{ user.profilePhotoUrl }}" style="max-width: 100px" />
+  <strong>{{ user.name }}</strong>
+  <strong>{{ user.surname }}</strong>
+  {{ user.age }}
+  {{ user.address.city }}
+  <button (click)="dltElement(user)">delete</button>
 </div>

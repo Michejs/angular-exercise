@@ -1,3 +1,6 @@
 <div class="container">
-  <app-user-single [singleElement]="list"></app-user-single>
+  <app-user-single
+    [singleElement]="list"
+    (userDelete)="deleteUser($event)"
+  ></app-user-single>
 </div>
