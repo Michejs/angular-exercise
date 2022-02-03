@@ -1,4 +1,12 @@
-<div class="container" *ngFor="let user of singleElement; let x = index">
+<div
+  class="container"
+  [ngClass]="{
+    Manager: user.role == 'MANAGER',
+    Admin: user.role == 'ADMIN',
+    Staff: user.role == 'STAFF'
+  }"
+  *ngFor="let user of singleElement; let x = index"
+>
   {{ x + 1 }}.<img src="{{ user.profilePhotoUrl }}" style="max-width: 100px" />
   <strong>{{ user.name }}</strong>
   <strong>{{ user.surname }}</strong>

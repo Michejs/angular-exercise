@@ -1,4 +1,15 @@
 .container {
   display: flex;
   align-items: center;
+  width: fit-content;
+}
+
+.Staff {
+  border: 3px solid red;
+}
+.Manager {
+  border: 3px solid yellow;
+}
+.Admin {
+  border: 3px solid blueviolet;
 }

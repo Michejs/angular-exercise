@@ -17,9 +17,9 @@ export enum Gender {
     OTHER,
 }
 export enum Role {
-    STAFF,
-    MANAGER,
-    ADMIN,
+    STAFF = "STAFF",
+    MANAGER = "MANAGER",
+    ADMIN = "ADMIN",
 }
 interface iAddress {
     city: string;
