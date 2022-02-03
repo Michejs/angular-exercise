@@ -3,4 +3,5 @@
     [singleElement]="list"
     (userDelete)="deleteUser($event)"
   ></app-user-single>
+  <p *ngIf="list.length === 0">Non sono presenti utenti</p>
 </div>
